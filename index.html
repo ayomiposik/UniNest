@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UniNest | Student Accommodation Finder</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header class="navbar">
+        <div class="logo">UniNest</div>
+        <nav>
+            <a href="#listings">Find Housing</a>
+            <a href="#tips">Housing Tips</a>
+            <a href="#" class="btn-primary">List a Property</a>
+        </nav>
+    </header>
+
+    <section class="carousel-container">
+        <h2>Featured Accommodations</h2>
+        <div class="carousel-wrapper">
+            <span id="item-1"></span>
+            <span id="item-2"></span>
+            <span id="item-3"></span>
+            
+            <div class="carousel-item item-1">
+                <div class="carousel-caption">
+                    <h3>Grand Avenue Apartments</h3>
+                    <p>0.5 miles from Campus • Free Wi-Fi</p>
+                </div>
+            </div>
+            <div class="carousel-item item-2">
+                <div class="carousel-caption">
+                    <h3>Varsity Luxury Suites</h3>
+                    <p>0.2 miles from Campus • Gym & Pool Included</p>
+                </div>
+            </div>
+            <div class="carousel-item item-3">
+                <div class="carousel-caption">
+                    <h3>The Scholar's Shared House</h3>
+                    <p>1.0 miles from Campus • Affordable Rates</p>
+                </div>
+            </div>
+
+            <div class="carousel-nav">
+                <a href="#item-1" class="nav-dot"></a>
+                <a href="#item-2" class="nav-dot"></a>
+                <a href="#item-3" class="nav-dot"></a>
+            </div>
+        </div>
+    </section>
+
+    <main class="main-layout" id="listings">
+        
+        <aside class="sidebar">
+            <h3>Filter Accommodations</h3>
+            <form class="filter-form">
+                <div class="filter-group">
+                    <label>Price Range Category</label>
+                    <select name="price-category">
+                        <option value="all">All Budgets</option>
+                        <option value="budget">Budget Friendly ($500/mo)</option>
+                        <option value="mid">Mid-Range ($500 - $900/mo)</option>
+                        <option value="premium">Premium Suite ($900+/mo)</option>
+                    </select>
+                </div>
+                <div class="filter-group">
+                    <label>Proximity to Campus</label>
+                    <select name="proximity">
+                        <option value="any">Any distance</option>
+                        <option value="walking">Walking Distance ( 0.5 miles)</option>
+                        <option value="short">Short Commute ( 2 miles)</option>
+                    </select>
+                </div>
+                <button type="button" class="btn-secondary">Apply Filters</button>
+            </form>
+        </aside>
+
+        <section class="listings-grid">
+            
+            <article class="property-card">
+                <div class="property-image">
+                    <img src="https://images.unsplash.com/photo-1522771739844-6a9f6d5f14af?auto=format&fit=crop&w=500&q=80" alt="Cozy Room">
+                    <span class="badge price-tag">$450/mo</span>
+                </div>
+                <div class="property-details">
+                    <h3>Ivy Shared Residence</h3>
+                    <p class="proximity-indicator">📍 0.4 miles to Main Campus (5 mins walk)</p>
+                    
+                    <div class="amenities">
+                        <span class="amenity-tag">📶 High-Speed Wi-Fi</span>
+                        <span class="amenity-tag">🧺 In-unit Laundry</span>
+                        <span class="amenity-tag">⚡ Utilities Included</span>
+                    </div>
+                    <a href="#" class="btn-card">View Details</a>
+                </div> 
+            </article>
+
+            <article class="property-card">
+                <div class="property-image">
+                    <img src="https://images.unsplash.com/photo-1502672260266-1c1ef2d93688?auto=format&fit=crop&w=500&q=80" alt="Modern Studio">
+                    <span class="badge price-tag">$950/mo</span>
+                </div>
+                <div class="property-details">
+                    <h3>Apex Studio Apartments</h3>
+                    <p class="proximity-indicator">📍 0.1 miles to North Campus (1 min walk)</p>
+                    <div class="amenities">
+                        <span class="amenity-tag">📶 High-Speed Wi-Fi</span>
+                        <span class="amenity-tag">🏋️ On-site Gym</span>
+                        <span class="amenity-tag">🔒 24/7 Security</span>
+                    </div>
+                    <a href="#" class="btn-card">View Details</a>
+                </div>
+            </article>
+
+        </section>
+    </main>
+
+    <section class="tips-section" id="tips">
+        <h2>Smart Student Housing Tips 💡</h2>
+        <div class="tips-grid">
+            <div class="tip-box">
+                <h4>Check What's Included</h4>
+                <p>Always ask if utilities (electricity, water, internet) are included in the monthly rent baseline to avoid unexpected bills.</p>
+            </div>
+            <div class="tip-box">
+                <h4>Understand the Lease</h4>
+                <p>Don't sign blindly. Ensure you know if you are signing an individual lease or a joint lease with roommates.</p>
+            </div>
+            <div class="tip-box">
+                <h4>Inspect Before Moving In</h4>
+                <p>Take photos of any existing damage on your move-in day so you don't lose your security deposit later.</p>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2026 UniNest Inc. Helping students feel at home.</p>
+    </footer>
+
+</body>
+</html>
